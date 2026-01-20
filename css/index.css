@@ -1,16 +1,49 @@
 body{
     background-color:#8C4623;
     color: #F9F3E9;
-    font-family: "Merriweather", serif;
+    font-family: "DM Serif Text", serif;
     font-style: normal;
     overflow-x: hidden;
+    margin:0;
 }
 
 header{
-    width:100%;
     position:sticky;
-    background-color:#2B1B17;
     top:0;
+    background-color:#2B1B17;
     margin:0;
     padding: 0;
+    width:100%;
 }
+
+header nav{
+    padding: 1rem 2rem;
+    align-items: center;
+    display:flex;
+}
+
+header nav h1{
+    margin:0;
+    color: #F9F3E9;
+    margin-right: auto;
+}
+
+header nav ul{
+    list-style-type: none;
+    color:#F9F3E9;
+    display:flex;
+    justify-content: center;
+    gap: 6.25rem;
+    margin:0;
+    padding:0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #F9F3E9;
+}
+
+/* highlights the link that corresponds to the current page*/
+header nav ul li a.active {
+    background-color: #04AA6D;
+  }
