@@ -14,6 +14,7 @@ header{
     margin:0;
     padding: 0;
     width:100%;
+    z-index: 100;
 }
 
 header nav{
@@ -41,9 +42,38 @@ header nav ul{
 header nav ul li a {
     text-decoration: none;
     color: #F9F3E9;
+    transition: color 0.3s ease;
 }
 
 /* highlights the link that corresponds to the current page*/
-header nav ul li a.active {
-    background-color: #04AA6D;
+header nav ul li a:hover {
+    color: #EFBF04;
   }
+
+.social-icons {
+    display: flex;
+    gap: 0.5rem;
+    margin-left: 4rem;
+}
+
+.social-icons a {
+    color: #F9F3E9;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #F9F3E9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #F9F3E9;
+    color: #2B1B17;
+}
+
+.social-icons i {
+    font-size: 1.2rem;
+}
