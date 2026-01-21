@@ -180,3 +180,67 @@ header nav ul li a:hover {
 .hero-footer i {
     margin-right: 0.5rem;
 }
+
+/*About Section*/
+#About{
+    background-color: #F9F3E9;
+    padding: 4rem 2rem;
+}
+
+#About h2{
+    color:#2B1B17;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom:3rem;
+}
+
+.intro{
+    color:#2B1B17;
+    text-align: center;
+}
+.about {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* 3 columns: image, text box, image */
+    gap: 2rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Text container styling */
+.about-text {
+    background-color: #8C4623;
+    padding: 3rem;
+    border-radius: 20px;
+    color: #F9F3E9;
+    grid-column: 2; /* Middle column */
+}
+
+.about-text .intro:first-child {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.about-text .intro:last-child {
+    background-color: #2B1B17;
+    padding: 2rem;
+    border-radius: 15px;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+/* Image styling */
+#morelos_pic {
+    width: 100%;
+    height: 350px;
+    border-radius: 15px;
+    grid-column: 1; /* Left column */
+}
+
+#tortilla_making {
+    width: 100%;
+    height: 350px;
+    border-radius: 15px;
+    grid-column: 3; /* Right column */
+}
