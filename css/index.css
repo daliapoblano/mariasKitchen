@@ -195,7 +195,7 @@ header nav ul li a:hover {
 }
 
 .intro{
-    color:#2B1B17;
+    color:#F9F3E9;
     text-align: center;
 }
 .about {
@@ -216,6 +216,12 @@ header nav ul li a:hover {
     grid-column: 2; /* Middle column */
 }
 
+.about-description{
+    background-color:#2B1B17;
+    padding:2rem;
+    border-radius: 20px;
+}
+
 .about-text .intro:first-child {
     font-size: 1.5rem;
     margin-bottom: 2rem;
@@ -233,14 +239,16 @@ header nav ul li a:hover {
 /* Image styling */
 #morelos_pic {
     width: 100%;
-    height: 350px;
+    height: 400px;
+    object-fit: cover;
     border-radius: 15px;
     grid-column: 1; /* Left column */
 }
 
 #tortilla_making {
     width: 100%;
-    height: 350px;
+    height: 400px;
+    object-fit: cover;
     border-radius: 15px;
     grid-column: 3; /* Right column */
 }
