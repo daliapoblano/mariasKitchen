@@ -1,0 +1,21 @@
+#Reviews{
+    background-color: #F9F3E9;
+    
+}
+#Reviews h3{
+    color:#2B1B17;
+    margin-top:0;
+    text-align: center;
+    padding-top:10rem;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+#Reviews h2{
+    color:#2B1B17;
+    margin-top:0;
+    padding-top:3rem;
+    text-align: center;
+    text-transform:uppercase;
+    letter-spacing:15px;
+    font-size:2rem;
+}
