@@ -2,5 +2,9 @@
     background-color: #2B1B17;
 }
 #Contact-Us h2{
-    
+    padding-top:3rem;
+    margin-top:0;
+    text-align:left;
+    padding-left:13rem;
+    text-transform:uppercase;
 }
