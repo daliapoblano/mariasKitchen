@@ -276,14 +276,20 @@
                             leave a message and we'll get back to you as soon as possible. Gracias!</p>
                         <div class="contact-container">
                             <form>
-                                <label for="name">Name*</label><br>
-                                <input type="text" id="name" name="name"><br>
-                                <label for="email">Email Address*</label><br>
-                                <input type="text" id="email" name="email"><br>
-                                <label for="email-subject">Subject*</label><br>
-                                <input type="text" id="email-subject" name="email-subject"><br>
-                                <label for="message">Message*</label><br>
-                                <input type="text" id="message" name="message"><br>
+                                <div class="form-row">
+                                    <div class="form-field">
+                                        <label for="name">Name*</label>
+                                        <input type="text" id="name" name="name">
+                                    </div>
+                                    <div class="form-field">
+                                        <label for="email">Email Address*</label>
+                                        <input type="text" id="email" name="email">
+                                    </div>
+                                </div>
+                                <label for="email-subject">Subject*</label>
+                                <input type="text" id="email-subject" name="email-subject">
+                                <label for="message">Message*</label>
+                                <textarea id="message" name="message"></textarea>
                             </form>
                             <button id="submit-button">Submit</button>
                         </div>

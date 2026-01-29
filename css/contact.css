@@ -1,17 +1,109 @@
 #Contact-Us{
     background-color: #2B1B17;
+    padding-bottom: 2rem;
 }
 #Contact-Us h2{
-    padding-top:15rem;
-    margin-top:0;
-    text-align:left;
-    padding-left:13rem;
-    text-transform:uppercase;
-    font-size:2.5rem;
+    padding-top: 15rem;
+    margin-top: 0;
+    text-align: left;
+    padding-left: 13rem;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: #F9F3E9;
+    margin-bottom: 2rem;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .contact p{
-    color:#EFBF04;
-    text-align:left;
-    padding-left:10rem;
-    font-size:1.25rem;
+    color: #EFBF04;
+    text-align: left;
+    padding-left: 13rem;
+    font-size: 1.25rem;
+    max-width: 450px;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+    align-self: flex-start;
+}
+.contact-container {
+    background-color: #F9F3E9;
+    padding: 3rem;
+    border-radius: 8px;
+    width: 450px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    margin-left: 550px;
+    position: relative;
+    margin-top: -300px;
+}
+.contact-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.form-row {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.form-field {
+    flex: 1;
+}
+.contact-container label {
+    font-size: 0.95rem;
+    color: #2B1B17;
+    margin-bottom: 0.5rem;
+    display: block;
+    font-weight: 500;
+}
+.contact-container input,
+.contact-container textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #C4B5A0;
+    border-radius: 4px;
+    background-color: #C4B5A0;
+    font-size: 1rem;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+.contact-container textarea {
+    height: 150px;
+    resize: vertical;
+}
+#submit-button {
+    background-color: #EFBF04;
+    color: #2B1B17;
+    border: none;
+    padding: 0.75rem 2.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+    text-transform: capitalize;
+    display: block;
+    margin: 1.5rem auto 0;
+    transition: background-color 0.3s ease;
+}
+#submit-button:hover {
+    background-color: #D4A903;
+}
+.contact h5 {
+    color: #F5F5F5;
+    padding-left: 13rem;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 1.5rem 0 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    align-self: flex-start;
+}
+.contact h5:first-of-type {
+    margin-top: 3rem;
+}
+.contact h5 i {
+    color: #EFBF04;
+    font-size: 1.2rem;
 }
