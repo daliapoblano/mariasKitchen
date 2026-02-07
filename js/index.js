@@ -48,3 +48,17 @@ dots.forEach((dot, index) => {
 });
 
 activatingCard(0);
+
+//Activating Switch Button to translate content 
+document.getElementById('langToggle').addEventListener('change', function(){
+    const aboutDescription = document.querySelector('.about-description');
+    const intro = document.querySelector('.intro');
+
+    if(this.checked){
+        intro.textContent = "Del Corazón de Morelos a tu Mesa";
+        aboutDescription.textContent = "En la Cocina de María, creemos que las mejores comidas son aquellas que cuentan una historia. Destacamos la importancia de llevar hasta ti los sabores auténticos y reconfortantes de México, utilizando técnicas tradicionales y los mismos sabores que han llenado nuestra cocina familiar por generaciones. Cada platillo es un pedacito de hogar, hecho con amor y servido con herencia."
+    }
+    else{
+        location.reload();
+    }
+})
