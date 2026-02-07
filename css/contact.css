@@ -1,6 +1,6 @@
 #Contact-Us{
     background-color: #2B1B17;
-    padding-bottom: 2rem;
+    padding-bottom: 12rem;
 }
 #Contact-Us h2{
     padding-top: 15rem;
@@ -99,10 +99,9 @@
     align-items: center;
     gap: 0.75rem;
     align-self: flex-start;
-    padding-top: -950px;
 }
 .contact h5:first-of-type {
-    margin-top: 1rem;
+    margin-top: -160px;
 }
 .contact h5 i {
     color: #EFBF04;
