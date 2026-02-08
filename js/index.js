@@ -62,3 +62,41 @@ document.getElementById('langToggle').addEventListener('change', function(){
         location.reload();
     }
 })
+
+//Activating submit button in contact form 
+document.getElementById('submit-button').addEventListener('click', function(e){
+    e.preventDefault();
+
+    const form = document.querySelector('.contact-container form');
+    const submitButton = document.getElementById('submit-button');
+    const container = document.querySelector('.contact-container');
+    
+    // Store original height to prevent layout shift
+    const originalHeight = container.offsetHeight;
+    container.style.minHeight = originalHeight + 'px';
+    
+    // Hide the form and submit button
+    form.style.display = 'none';
+    submitButton.style.display = 'none';
+
+    //Creating thank you message
+    const thankYouMessage = document.createElement('div');
+    thankYouMessage.className = 'thank-you-message';
+    thankYouMessage.innerHTML = '<i class="fa-solid fa-check"></i> Thanks for your response! We\'ll get back to you shortly.';
+
+    //inserting the message in the container
+    container.appendChild(thankYouMessage);
+
+    //Optional: Show form again after 5 seconds and remove message
+    setTimeout(function(){
+        thankYouMessage.style.opacity ='0';
+        setTimeout(function(){
+            thankYouMessage.remove();
+            form.style.display = '';
+            submitButton.style.display = '';
+            container.style.minHeight = '';
+            form.reset();
+        }, 500);
+    }, 5000);
+});
+  

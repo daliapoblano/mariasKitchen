@@ -15,7 +15,7 @@
 .contact {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;  
 }
 .contact p{
     color: #EFBF04;
@@ -33,8 +33,8 @@
     border-radius: 8px;
     width: 450px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    margin-left: 550px;
-    position: relative;
+    margin-left:550px;
+    position: relative; 
     margin-top: -400px;
 }
 .contact-container form {
@@ -106,4 +106,24 @@
 .contact h5 i {
     color: #EFBF04;
     font-size: 1.2rem;
+}
+/*Thank you message*/
+.thank-you-message{
+    background-color:#F9F3E9;
+    color:#2B1B17;
+    padding: 3rem;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    transition: opacity 0.5s ease;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    gap:10px;
+    min-height: 400px;
+    font-size: 1.2rem;
+}
+.thank-you-message i {
+    color:green;
+    font-size: 1.5rem;
 }
