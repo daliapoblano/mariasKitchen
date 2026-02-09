@@ -99,4 +99,20 @@ document.getElementById('submit-button').addEventListener('click', function(e){
         }, 500);
     }, 5000);
 });
-  
+
+//Drop down menu (for mobile users)
+const dropDown = document.getElementById('dropDown');
+const navMenu = document.querySelector('header nav ul');
+
+dropDown.addEventListener('click', function() {
+    this.classList.toggle('active');
+    navMenu.classList.toggle('active');
+});
+
+const navLinks = document.querySelectorAll('header nav ul li a');
+navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+        dropDown.classList.remove('active');
+        navMenu.classList.remove('active');
+    });
+});
